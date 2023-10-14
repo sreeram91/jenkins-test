@@ -1,6 +1,6 @@
 FROM node:12-alpine
 WORKDIR /jenkins-sample-test
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
 CMD [ "npm", "start" ]
