@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker buildx build -f Dockerfile.dev -t sreeram91/jenkinstestsample .'
+        sh 'docker build -f Dockerfile.dev -t sreeram91/jenkinstestsample .'
       }
     }
     stage('Login') {
